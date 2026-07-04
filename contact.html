@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Mahme Mobile Selling Corporation</title>
+  <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+<body>
+  <div class="main-container">
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <h2>Mahme</h2>
+          <h6>Mobile Selling Corporation</h6>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="about.html" class="nav-item">About</a></li>
+          <li><a href="services.html" class="nav-item">Services</a></li>
+          <li><a href="contact.html" class="nav-item active">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark and light mode" aria-pressed="false">
+            <span class="theme-toggle-icon">🌙</span>
+          </button>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="services-page">
+      <section class="services-hero">
+        <p class="section-label">Contact Us</p>
+        <h1>We are always ready to assist you</h1>
+        <p>For product questions, support requests, or purchase assistance, please reach out to our team through the contact details below.</p>
+      </section>
+
+      <section class="service-details">
+        <div class="service-detail-block">
+          <h3>Phone</h3>
+          <p><a href="tel:+911234567890">+91 12345 67890</a></p>
+        </div>
+        <div class="service-detail-block">
+          <h3>Email</h3>
+          <p><a href="mailto:support@mahme.com">support@mahme.com</a></p>
+        </div>
+        <div class="service-detail-block">
+          <h3>Location</h3>
+          <p>Chennai, Tamil Nadu, India</p>
+        </div>
+      </section>
+
+      <section class="service-detail-block contact-location-block">
+        <h3>Our Service Shop Location</h3>
+        <p>Mahme Mobile Service Shop is located at 72, Main Street, Chennai, Tamil Nadu, India.</p>
+        <p>We welcome customers for mobile buying, selling, exchange, repair, skins, and accessory services.</p>
+      </section>
+
+      <section class="shop-locations-section">
+        <h2>Shop Locations</h2>
+
+        <div class="shop-search-box">
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input id="shop-search-input" type="text" placeholder="Search district or shop name" />
+          </div>
+          <button id="shop-search-button" type="button">Find Nearby Shop</button>
+        </div>
+
+        <p id="shop-search-status" class="shop-search-status" aria-live="polite"></p>
+
+        <div class="shop-locations-grid" id="shop-locations-grid">
+          <article class="shop-location-card" data-search="mahme main branch chennai tamil nadu">
+            <div>
+              <h3>Mahme Main Branch</h3>
+              <p>Chennai, Tamil Nadu</p>
+              <p>72, Main Street</p>
+              <p>Email: <a href="mailto:main@mahme.com">main@mahme.com</a></p>
+            </div>
+            <img src="images/locations/Mahme Main Branch.png" alt="Mahme Main Branch shop" />
+          </article>
+          <article class="shop-location-card" data-search="mahme central shop coimbatore tamil nadu">
+            <div>
+              <h3>Mahme Central Shop</h3>
+              <p>Coimbatore, Tamil Nadu</p>
+              <p>18, Park Road</p>
+              <p>Email: <a href="mailto:central@mahme.com">central@mahme.com</a></p>
+            </div>
+            <img src="images/locations/Mahme Central Shop.png" alt="Mahme Central Shop" />
+          </article>
+          <article class="shop-location-card" data-search="mahme tech hub madurai tamil nadu">
+            <div>
+              <h3>Mahme Tech Hub</h3>
+              <p>Madurai, Tamil Nadu</p>
+              <p>45, Market Lane</p>
+              <p>Email: <a href="mailto:tech@mahme.com">tech@mahme.com</a></p>
+            </div>
+            <img src="images/locations/Mahme Tech Hub.png" alt="Mahme Tech Hub" />
+          </article>
+          <article class="shop-location-card" data-search="mahme mobile zone trichy tamil nadu">
+            <div>
+              <h3>Mahme Mobile Zone</h3>
+              <p>Trichy, Tamil Nadu</p>
+              <p>9, High Court Road</p>
+              <p>Email: <a href="mailto:zone@mahme.com">zone@mahme.com</a></p>
+            </div>
+            <img src="images/locations/Mahme Mobile Zone mobile shop Trichy.png" alt="Mahme Mobile Zone" />
+          </article>
+          <article class="shop-location-card" data-search="mahme namakkal center namakkal tamil nadu">
+            <div>
+              <h3>Mahme Namakkal Center</h3>
+              <p>Namakkal, Tamil Nadu</p>
+              <p>12, Market Road</p>
+              <p>Email: <a href="mailto:namakkal@mahme.com">namakkal@mahme.com</a></p>
+            </div>
+            <img src="images/locations/Mahme Namakkal Center Namakkal.png" alt="Mahme Namakkal Center" />
+          </article>
+        </div>
+
+        <button id="toggle-shop-list" class="shop-toggle-btn" type="button" aria-expanded="false">
+          <span class="toggle-icon">↓</span>
+          <span class="toggle-text">Show all locations</span>
+        </button>
+
+        <div class="district-list">
+          <h3>Nearby Shop by District</h3>
+          <ul>
+            <li>Chennai</li>
+            <li>Coimbatore</li>
+            <li>Madurai</li>
+            <li>Trichy</li>
+            <li>Namakkal</li>
+            <li>Salem</li>
+            <li>Tirunelveli</li>
+            <li>Vellore</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Backend - Product Buying Dashboard</title>
+  <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+<body>
+  <div class="main-container">
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <h2>Mahme</h2>
+          <h6>Mobile Buying & Repair Hub</h6>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="about.html" class="nav-item">About</a></li>
+          <li><a href="services.html" class="nav-item">Services</a></li>
+          <li><a href="repair-accessories.html" class="nav-item">Repair & Accessories</a></li>
+          <li><a href="contact.html" class="nav-item">Contact</a></li>
+          <li><a href="backend.html" class="nav-item active">Backend</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark and light mode" aria-pressed="false">
+            <span class="theme-toggle-icon">🌙</span>
+          </button>
+          <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="backend-page">
+      <section class="backend-hero">
+        <p class="section-label">Product Buying Dashboard</p>
+        <h1>Manage purchase orders and track product inventory</h1>
+        <p>Use this backend page to create purchase orders, review recent orders, and manage product buying details for the Mahme storefront.</p>
+      </section>
+
+      <section class="backend-grid">
+        <article class="backend-card">
+          <h3>Order Entry</h3>
+          <p>Create new purchase orders for customer product buys.</p>
+        </article>
+        <article class="backend-card">
+          <h3>Live Order List</h3>
+          <p>View the most recent orders and check status for each purchase.</p>
+        </article>
+        <article class="backend-card">
+          <h3>Order Summary</h3>
+          <p>Track total orders, quantity, and pending order entries in one place.</p>
+        </article>
+      </section>
+
+      <section class="backend-form-card">
+        <h2>Create Purchase Order</h2>
+        <form id="backend-order-form">
+          <label>
+            Customer Name
+            <input id="customer-name" type="text" placeholder="Enter customer name" required />
+          </label>
+
+          <label>
+            Customer Phone
+            <input id="customer-phone" type="tel" placeholder="Enter phone number" required />
+          </label>
+
+          <label>
+            Product
+            <input id="product-name" type="text" placeholder="e.g. Apple iPhone 13" required />
+          </label>
+
+          <label>
+            Quantity
+            <input id="product-qty" type="number" min="1" value="1" required />
+          </label>
+
+          <label>
+            Unit Price
+            <input id="product-price" type="number" min="0" value="0" required />
+          </label>
+
+          <label>
+            Payment Method
+            <select id="payment-method">
+              <option value="Online">Online</option>
+              <option value="Cash on delivery">Cash on delivery</option>
+              <option value="Card">Card</option>
+            </select>
+          </label>
+
+          <label>
+            Notes
+            <textarea id="order-notes" rows="4" placeholder="Add order notes or delivery instructions"></textarea>
+          </label>
+
+          <button class="btn" type="submit">Save Purchase Order</button>
+        </form>
+      </section>
+
+      <section class="backend-orders-section">
+        <div class="section-header">
+          <h2>Recent Purchase Orders</h2>
+          <span class="offer-badge">Live data</span>
+        </div>
+        <div id="orders-summary" class="backend-orders-summary"></div>
+        <div id="orders-list" class="backend-orders-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/backend.js"></script>
+</body>
+</html>
